@@ -1,0 +1,24 @@
+/// 폰트스타일 제외 유용한 변수는 여기에 추가
+// Website Color
+$colorOpacity: 1 - 0.46;
+
+$BK: rgba(0, 0 ,0, 0.87);
+$BK: rgba(0, 0 ,0, 0.87) !default;
+$BKsub: rgba($BK, $colorOpacity);
+$BKsub: rgba($BK, $colorOpacity) !default;
+$WH: rgba(255, 255, 255, 1);
+$WHsub: rgba($WH, $colorOpacity);
+
+// Primary Color
+$Primary: rgba(49, 62, 102, 1);
+$PrimarySub: rgba($Primary, $colorOpacity);
+$PrimaryDarken: darken($Primary, 5%) ;
+
+// Accent Color
+$Accent: rgba(3, 155, 229, 1);
+$AccentSub: rgba($Accent, $colorOpacity);
+$AccentDarken: darken($AccentSub, 5%);
+
+// Transform 50%
+$MiddleX: translateX(-50%);
+$MiddleY: translateY(-50%);
