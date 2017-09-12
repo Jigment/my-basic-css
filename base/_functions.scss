@@ -1,0 +1,10 @@
+/// scss함수관련
+@import "var";
+@import "mixins";
+
+// 이미지 로드
+@each $name in 'img1' 'img2' 'img3' {
+  .background-#{$name} {
+    background-image: url('/images/#{$name}.png');
+  }
+}
