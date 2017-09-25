@@ -19,6 +19,16 @@ $Accent: rgba(3, 155, 229, 1);
 $AccentSub: rgba($Accent, $colorOpacity);
 $AccentDarken: darken($AccentSub, 5%);
 
+// Noto Sans Weight
+$Regular: 400;
+$Thin: $Regular - 300;
+$Light: $Regular - 100;
+$Medium: $Regular + 100;
+$Bold: $Regular + 200;
+$Black: $Regular + 400;
+// CJK Basic font size
+$FontSize: 15px;
+
 // Transform 50%
 $MiddleX: translateX(-50%);
 $MiddleY: translateY(-50%);

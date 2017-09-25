@@ -1,0 +1,13 @@
+@import "var";
+
+%shadow-lv1 {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+// example
+// .box {
+//   @extend %shadow-lv1;
+// }

@@ -5,23 +5,6 @@
 // Noto Sans
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
-// Noto Sans Weight
-$Regular: 400;
-$Thin: $Regular - 300;
-$Light: $Regular - 100;
-$Medium: $Regular + 100;
-$Bold: $Regular + 200;
-$Black: $Regular + 400;
-
-$FontSize: 15px;
-
-// Font Color, Weight include
-@mixin font-style ($fontColor, $fontWeight, $fontSize) {
-  color: $fontColor;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-}
-
 body {
   font-family: 'Noto Sans Korean', 'san-serif';
   letter-spacing: -0.025em;
