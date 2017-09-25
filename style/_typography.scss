@@ -1,6 +1,6 @@
 /// 타이포 관련 변수, 믹스인 전체
-@import "../base/var";
-@import "../base/mixins";
+@import "../abstracts/var";
+@import "../abstracts/mixins";
 
 // Noto Sans
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
@@ -12,6 +12,7 @@ $Light: $Regular - 100;
 $Medium: $Regular + 100;
 $Bold: $Regular + 200;
 $Black: $Regular + 400;
+
 $FontSize: 15px;
 
 // Font Color, Weight include

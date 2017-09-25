@@ -58,3 +58,12 @@
 //     float: none;
 //   }
 // }
+
+// or
+
+// @include respond-to (xs) {
+//   .media-sample {
+//     float: left;
+//     width: 250px;
+//   }
+// }

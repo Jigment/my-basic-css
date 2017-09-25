@@ -5,7 +5,10 @@
 @import "core/bootstrap";
 // 폰트스타일 제외 함수, 변수, 믹스인등은 base폴더에 있음
 
-@import "base/functions";
-
 @import "style/typography"; //폰트스타일
-@import "style/index";
+
+@import "layout/header";
+
+@import "components/buttons.scss";
+
+@import "pages/index";
