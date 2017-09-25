@@ -22,3 +22,14 @@ $AccentDarken: darken($AccentSub, 5%);
 // Transform 50%
 $MiddleX: translateX(-50%);
 $MiddleY: translateY(-50%);
+$MiddleXY: translate(-50%, -50%);
+
+// max layout
+$Gutter: 16px; //기본 사이값
+$ColumnWidth: 88px; //디자인상 콜럼 가로크기
+$Contain: $ColumnWidth * 12 + $Gutter * 24;
+
+// Media query base bootstrap
+$xs: 768px;
+$sm: 992px;
+$md: $Contain;

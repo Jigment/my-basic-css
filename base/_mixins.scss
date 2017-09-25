@@ -1,6 +1,5 @@
 /// 폰트스타일 제외 유용한 믹스인은 여기에 추가
-@import "var";
-// clearfix
+@import "var"; // clearfix
 @mixin clearfix {
   &::after {
     content: '';
@@ -8,7 +7,6 @@
     clear: both;
   }
 }
-
 // Transform
 @mixin translate ($translate) {
   transform: $translate;
@@ -17,7 +15,6 @@
   -moz-transform: $translate;
   -webkit-transform: $translate;
 }
-
 // Background image common
 @mixin bg-cover {
   width: 100%;
@@ -25,3 +22,39 @@
   background-position: center center;
   background-size: cover;
 }
+// Media query
+@mixin respond-to ($media) {
+   @if $media == xs{
+    @media screen and (max-width: $xs) {}
+  }
+  // only 768px ~ 992px
+  @else if $media == xs to sm {
+     @media screen and (min-width: $xs + 1) and (max-width: $sm - 1){
+      @content;
+    }
+  }
+  @else if $media == sm {
+     @media screen and (max-width: $sm){
+      @content;
+    }
+  }
+  @else if $media == md {
+     @media screen and (max-width: $md){
+      @content;
+    }
+  }
+}
+// Media query include sample
+// .media-sample {
+//   float: left;
+//   width: 250px;
+//   @include respond-to (xs) {
+//     width: 100%;
+//   }
+//   @include respond-to (xs to sm) {
+//     width: 125px;
+//   }
+//   @include respond-to (md) {
+//     float: none;
+//   }
+// }
