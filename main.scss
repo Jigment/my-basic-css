@@ -1,16 +1,16 @@
 /// main css file
 @charset 'utf-8';
 
-@import "core/reset";
-@import "core/bootstrap";
+@import "base/reset";
+@import "vendors/bootstrap";
 // 폰트스타일 제외 함수, 변수, 믹스인등은 base폴더에 있음
 
-@import "style/typography"; //폰트스타일
+@import "base/typography"; //폰트스타일
 
 @import "layout/header";
 @import "layout/footer";
 
-@import "components/buttons.scss";
+@import "components/buttons";
 
 @import "pages/index";
 @import "pages/contactus";
