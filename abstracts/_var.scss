@@ -2,12 +2,10 @@
 // Website Color
 $colorOpacity: 1 - 0.46;
 
-$BK: rgba(0, 0 ,0, 0.87);
 $BK: rgba(0, 0 ,0, 0.87) !default;
-$BKsub: rgba($BK, $colorOpacity);
 $BKsub: rgba($BK, $colorOpacity) !default;
-$WH: rgba(255, 255, 255, 1);
-$WHsub: rgba($WH, $colorOpacity);
+$WH: rgba(255, 255, 255, 1) !default;
+$WHsub: rgba($WH, $colorOpacity) !default;
 
 // Primary Color
 $Primary: rgba(49, 62, 102, 1);
@@ -20,14 +18,14 @@ $AccentSub: rgba($Accent, $colorOpacity);
 $AccentDarken: darken($AccentSub, 5%);
 
 // Noto Sans Weight
-$Regular: 400;
+$Regular: 400 !default;
 $Thin: $Regular - 300;
 $Light: $Regular - 100;
 $Medium: $Regular + 100;
 $Bold: $Regular + 200;
 $Black: $Regular + 400;
 // CJK Basic font size
-$FontSize: 15px;
+$FontSize: 15px !default;
 
 // Transform 50%
 $MiddleX: translateX(-50%);
@@ -35,7 +33,7 @@ $MiddleY: translateY(-50%);
 $MiddleXY: translate(-50%, -50%);
 
 // max layout
-$Gutter: 16px; //기본 사이값
+$Gutter: 16px !default; //기본 사이값
 $ColumnWidth: 88px; //디자인상 콜럼 가로크기
 $Contain: $ColumnWidth * 12 + $Gutter * 24;
 
@@ -43,3 +41,6 @@ $Contain: $ColumnWidth * 12 + $Gutter * 24;
 $xs: 768px;
 $sm: 992px;
 $md: $Contain;
+
+// Base grid
+$Grid: 8px;

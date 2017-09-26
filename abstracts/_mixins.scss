@@ -24,10 +24,22 @@
   -moz-transform: $translate;
   -webkit-transform: $translate;
 }
-// Background image common
-@mixin bg-cover {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
+// Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
 }
+
+// Prefix
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// Prefix ex
+// .foo {
+//   @include prefix(transform, rotate(90deg), ('webkit', 'ms'));
+// }
