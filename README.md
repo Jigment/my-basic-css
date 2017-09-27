@@ -26,7 +26,6 @@ my-basic-css/
 |
 |– pages/
 |   |– _index.scss         # only Index page scss
-|   |– _web.scss     # only contactus page scss
 |   |– _contactus.scss     # only contactus page scss
 |
 |– vendors/
