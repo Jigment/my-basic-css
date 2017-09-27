@@ -5,17 +5,29 @@ https://sass-guidelin.es/#conditional-statements
 
 my-basic-css/
 
-|– style.scss ** All scss import this file.
+|– main.scss ** All scss import this file.
 |
-|– core/
-|   |– _bootstrap.scss    # Bootstrap override scss
-|   |– _reset.scss        # Css Reset code
-|
-|– base/
-|–  |– _var.scss          # Sass Variables
+|– abstracts/
+|   |– _var.scss          # Sass Variables
 |   |– _functions.scss    # Sass Functions
 |   |– _mixins.scss       # Sass Mixins
+|   |– _placeholders.scss # Sass Placeholder
 |
-|– style/
-|–  |– _typography.scss   # Custom Typography rules
-|   |– _index.scss        # Design development
+|– base/
+|   |– _reset.scss        # Css Reset code
+|   |– _typography.scss   # Custom Typography rules
+|
+|– components/
+|   |– _buttons.scss       # Design development
+|
+|– layout/
+|   |– _header.scss        # Header scss
+|   |– _footer.scss        # Footer scss
+|
+|– pages/
+|   |– _index.scss         # only Index page scss
+|   |– _contactus.scss     # only contactus page scss
+|
+|– vendors/
+|   |– _bootstrap.scss    # Bootstrap override scss
+|   |– _jquery.scss       # jquery scss
