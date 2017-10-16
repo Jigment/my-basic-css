@@ -21,12 +21,16 @@ my-basic-css/
 |   |– _buttons.scss       # Design development
 |
 |– layout/
-|   |– _header.scss        # Header scss
-|   |– _footer.scss        # Footer scss
+|   |– _header.scss        # only Header scss
+|   |– _footer.scss        # only Footer scss
 |
 |– pages/
 |   |– _index.scss         # only Index page scss
 |   |– _contactus.scss     # only contactus page scss
+|
+|– theme/
+|   |– _theme.scss        # Basic theme
+|   |– _admin.scss        # Admin theme
 |
 |– vendors/
 |   |– _bootstrap.scss    # Bootstrap override scss

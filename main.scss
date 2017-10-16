@@ -1,10 +1,15 @@
 /// main css file
 @charset 'utf-8';
 
-@import "base/reset";
-@import "vendors/bootstrap";
-// 폰트스타일 제외 함수, 변수, 믹스인등은 base폴더에 있음
+// abstracts 폴더는 컴파일 안되는 것만 모아놓아야함
+@import "abstracts/var";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "abstracts/placeholders";
 
+@import "vendors/bootstrap";
+
+@import "base/reset";
 @import "base/typography"; //폰트스타일
 
 @import "layout/header";
@@ -14,3 +19,7 @@
 
 @import "pages/index";
 @import "pages/contactus";
+
+// 필요한 경우에만 테파 폴더 사용
+@import "themes/theme.scss";
+@import "themes/admin.scss";
