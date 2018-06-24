@@ -1,30 +1,43 @@
 /// 타이포 관련 변수, 믹스인 전체
-
+@import "../abstracts/var";
+@import "../abstracts/mixins";
 // spoqa
 // <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 // <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 // * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+// Noto Sans Weight
+$Regular: 400 !default;
+$Thin: $Regular - 300;
+$Light: $Regular - 100;
+$Medium: $Regular + 100;
+$Bold: $Regular + 200;
+$Black: $Regular + 400;
 
-// Noto Sans
+$FontSize: 15px !default;  // CJK Minimum font size
+$EnFontSize: 14px !default; // English Minimum font size
+
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
-
 body {
-  font-family: 'Inconsolata', monospace;
-  // font-family: 'Noto Sans Korean', 'san-serif';
+  // font-family: 'Inconsolata', monospace;
+  font-family: 'Noto Sans Korean', 'san-serif';
   letter-spacing: -0.025em;
   line-height: 1.7;
-  @include font-style ($BK, $Light, $FontSize);
+
   b {
     font-weight: $Medium;
   }
 }
 
-// ex style
 h2 {
   @include font-style ($BK, $Regular, $FontSize + 19px);
+
   span {
     color: $Accent; //색상변경 클래스 추가할 때
   }
+}
+// 이후 디자인에 맞춰 설정 후 작업
+p {
+  @include font-style ($BK, $Light, $FontSize);
 }
 
 .caption {

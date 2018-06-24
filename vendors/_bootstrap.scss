@@ -1,4 +1,7 @@
 /// Bootstrap override
+@import "../abstracts/var";
+@import "../abstracts/mixins";
+
 .contain {
   padding-right: $Gutter;
   padding-left: $Gutter;
@@ -6,7 +9,7 @@
   max-width: $Contain;
   min-width: 320px;
   margin: 0 auto;
-  @media screen and (max-width:840px){ //모바일, 타블렛 권장 여백값
+  @media screen and (max-width:840px) { //모바일, 타블렛 권장 여백값 google design
     padding-right: 16px;
     padding-left: 16px;
   }

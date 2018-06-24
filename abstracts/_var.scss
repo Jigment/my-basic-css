@@ -1,36 +1,31 @@
-/// 폰트스타일 제외 유용한 변수는 여기에 추가
+//
+// Variables
+//
+
 // Website Color
 $colorOpacity: 1 - 0.46;
+// = 0.54 // google color guide
 
-$BK: rgba(0, 0 ,0, 0.87) !default;
-$BKsub: rgba($BK, $colorOpacity) !default;
-$WH: rgba(255, 255, 255, 1) !default;
-$WHsub: rgba($WH, $colorOpacity) !default;
+// Black and white
+$BK:              rgba(0, 0 ,0, 0.87) !default;
+$BKsub:           rgba($BK, $colorOpacity) !default;
+$WH:              rgba(255, 255, 255, 1) !default;
+$WHsub:           rgba($WH, $colorOpacity) !default;
 
 // Primary Color
-$Primary: rgba(49, 62, 102, 1);
-$PrimarySub: rgba($Primary, $colorOpacity);
-$PrimaryDarken: darken($Primary, 7%) ;
+$Primary:         rgba(49, 62, 102, 1);
+$PrimarySub:      rgba($Primary, $colorOpacity);
+$PrimaryDarken:   darken($Primary, 7%) ;
 
 // Secondary Color
-$Second: rgba(49, 62, 102, 1);
-$SecondSub: rgba($Primary, $colorOpacity);
-$SecondDarken: darken($Second, 7%) ;
+$Second:          rgba(38, 245, 123, 1);
+$SecondSub:       rgba($Second, $colorOpacity);
+$SecondDarken:    darken($Second, 7%) ;
 
 // Accent Color
-$Accent: rgba(3, 155, 229, 1);
-$AccentSub: rgba($Accent, $colorOpacity);
-$AccentDarken: darken($AccentSub, 7%);
-
-// Noto Sans Weight
-$Regular: 400 !default;
-$Thin: $Regular - 300;
-$Light: $Regular - 100;
-$Medium: $Regular + 100;
-$Bold: $Regular + 200;
-$Black: $Regular + 400;
-// CJK Basic font size
-$FontSize: 15px !default;
+$Accent:          rgba(3, 155, 229, 1);
+$AccentSub:       rgba($Accent, $colorOpacity);
+$AccentDarken:    darken($AccentSub, 7%);
 
 // Transform 50%
 $MiddleX: translateX(-50%);
@@ -39,13 +34,14 @@ $MiddleXY: translate(-50%, -50%);
 
 // max layout
 $Gutter: 16px !default; //기본 사이값
-$ColumnWidth: 88px; //디자인상 콜럼 가로크기
+$ColumnWidth: 88px; //디자인상 콜럼 가로크기//가변형
 $Contain: $ColumnWidth * 12 + $Gutter * 24; //최대 컨테이너 가로크기
 
 // Media query base bootstrap
-$xs: 768px;
-$sm: 992px;
-$md: $Contain;
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
 
 // Base grid
 $Grid: 8px;
