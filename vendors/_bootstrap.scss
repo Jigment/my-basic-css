@@ -2,6 +2,9 @@
 @import "../abstracts/var";
 @import "../abstracts/mixins";
 
+// PC min841px - Container padding 16px, Column gutter 16*2px.
+// Tablet 840px - Container padding 24px, Column gutter 12*2px.
+// Mobile 480px - Container padding 16px, Column gutter 8*2px.
 .contain {
   padding-right: $Gutter;
   padding-left: $Gutter;
@@ -10,21 +13,41 @@
   min-width: 320px;
   margin: 0 auto;
   @media screen and (max-width:840px) { //모바일, 타블렛 권장 여백값 google design
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-left: $Gutter * 1.5;
+    padding-right: $Gutter * 1.5;
+  }
+  @media screen and (max-width:480px) { //모바일, 타블렛 권장 여백값 google design
+    padding-left: $Gutter;
+    padding-right: $Gutter;
   }
 }
 
 .row {
   margin-right: -$Gutter;
   margin-left: -$Gutter;
+  @media screen and (max-width:840px) {
+    margin-left: -$Gutter * 0.75;
+    margin-right: -$Gutter * 0.75;
+  }
+  @media screen and (max-width:480px) {
+    margin-left: -$Gutter * 0.5;
+    margin-right: -$Gutter * 0.5;
+  }
 }
 
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   position: relative;
   min-height: 1px;
-  padding-right: $Gutter;
   padding-left: $Gutter;
+  padding-right: $Gutter;
+  @media screen and (max-width: 840px) {
+    padding-left: $Gutter * 0.75;
+    padding-right:$Gutter * 0.75;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: $Gutter * 0.5;
+    padding-right:$Gutter * 0.5;
+  }
 }
 
 .pl-none {

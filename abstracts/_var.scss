@@ -13,28 +13,37 @@ $WH:              rgba(255, 255, 255, 1) !default;
 $WHsub:           rgba($WH, $colorOpacity) !default;
 
 // Primary Color
-$Primary:         rgba(49, 62, 102, 1);
-$PrimarySub:      rgba($Primary, $colorOpacity);
-$PrimaryDarken:   darken($Primary, 7%) ;
+$Primary:         rgba(49, 62, 102, 1) !default;
+$PrimarySub:      rgba($Primary, $colorOpacity); //no lighten, opacity
+$PrimaryLighter:  lighten($Primary, 14%);
+$PrimaryLight:    lighten($Primary, 7%);
+$PrimaryDark:     darken($Primary, 7%);
+$PrimaryDarker:   darken($Primary, 14%);
 
 // Secondary Color
 $Second:          rgba(38, 245, 123, 1);
 $SecondSub:       rgba($Second, $colorOpacity);
-$SecondDarken:    darken($Second, 7%) ;
+$SecondLighter:   lighten($Second, 14%) ;
+$SecondLight:     lighten($Second, 7%) ;
+$SecondDark:      darken($Second, 7%) ;
+$SecondDarker:    darken($Second, 14%) ;
 
 // Accent Color
 $Accent:          rgba(3, 155, 229, 1);
 $AccentSub:       rgba($Accent, $colorOpacity);
-$AccentDarken:    darken($AccentSub, 7%);
+$AccentLighter:   lighten($Accent, 14%) ;
+$AccentLight:     lighten($Accent, 7%) ;
+$AccentDark:      darken($Accent, 7%) ;
+$AccentDarker:    darken($Accent, 14%) ;
 
-// Transform 50%
+// Object Transform 50%
 $MiddleX: translateX(-50%);
 $MiddleY: translateY(-50%);
 $MiddleXY: translate(-50%, -50%);
 
-// max layout
+// max layout size
 $Gutter: 16px !default; //기본 사이값
-$ColumnWidth: 88px; //디자인상 콜럼 가로크기//가변형
+$ColumnWidth: 88px; //디자인상 최대 콜럼 가로크기//가변형
 $Contain: $ColumnWidth * 12 + $Gutter * 24; //최대 컨테이너 가로크기
 
 // Media query base bootstrap
